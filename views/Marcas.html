@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<title>Mar-Liz Autos S.R.L.</title>
+	<link rel="stylesheet" href="../CSS/Proyecto.css">
+	<link rel="stylesheet" href="../CSS/PROYECTOr.css">
+</head>
+
+<body>
+	<header>
+		<div class="logo">
+			<a href="Mar-Liz Autos S.R.L..html">
+				<img src="../imgs/logo.jpg" alt="Mar-Liz Autos Logo">
+			</a>
+		</div>
+		<nav>
+			<a href="../Inicio.html" class="nav-link">
+				<i class="fas fa-home"></i> Inicio
+			</a>
+			<a href="Marcas.html" class="nav-link">
+				<i class="fas fa-car"></i> Vehículos
+			</a>
+			<a href="Repuestos.html" class="nav-link">
+				<i class="fas fa-tools"></i> Repuestos
+			</a>
+			<a href="SobreNosotros.html" class="nav-link">
+				<i class="fas fa-info-circle"></i> Sobre Nosotros
+			</a>
+		</nav>
+		<button class="toggle-nav" id="nav-toggle">
+			<i class="fas fa-bars"></i>
+		</button>
+	</header>
+	<main class="main">
+		<h1 class="h1">Marcas</h1>
+		<div class="brand-gallery">
+			<a href="vehiculo foton.html">
+				<img src="../imgs/logo de foton.jpg" class="brand-logo" alt="Logo Foton">
+			</a>
+			<a href="vehiculo higer.html">
+				<img src="../imgs/Higer_Logo.png" class="brand-logo" alt="Logo Higer">
+			</a>
+			<a href="vehiculo jetour.html">
+				<img src="../imgs/logo de jetour.png" class="brand-logo" alt="Logo Jetour">
+			</a>
+			<a href="vehiculo cherry.html">
+				<img src="../imgs/logo de karry.png" class="brand-logo" alt="Logo Cherry">
+			</a>
+			<a href="vehiculo soueast.html">
+				<img src="../imgs/logo_de_soueaast-removebg-preview.png" class="brand-logo" alt="Logo Soueast">
+			</a>
+			<a href="vehiculo foday.html">
+				<img src="../imgs/foday_logo.png" class="brand-logo" alt="Logo Foday">
+			</a>
+			<a href="vehiculo changan.html">
+				<img src="../imgs/logo_de_changan-removebg-preview.png" class="brand-logo" alt="Logo Changan">
+			</a>
+		</div>
+	</main>
+	<footer>
+		<p>&copy; 2024 MAR-LIZ AUTOS S.R.L. Todos los derechos reservados.</p>
+		<div class="social-media">
+			<a href="#"><i class="fab fa-facebook"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+		</div>
+	</footer>
+	<script>
+		document.getElementById('nav-toggle').addEventListener('click', function () {
+			const nav = document.querySelector('nav');
+			nav.classList.toggle('nav-open');
+		});
+	</script>
+</body>
+
+</html>

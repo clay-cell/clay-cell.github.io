@@ -1,0 +1,50 @@
+/* Contenedor del producto */
+.product-container {
+    display: flex; /* Usamos flexbox para la disposición */
+    flex-direction: column; /* Coloca los elementos uno encima del otro */
+    align-items: center; /* Centra los elementos horizontalmente */
+    margin-bottom: 50px; /* Espacio entre el contenido y el footer */
+}
+
+/* Estilo de las imágenes */
+.brand-logo {
+    width: 60%; /* Ancho de la imagen */
+    margin: 10px; /* Margen alrededor de la imagen */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones para hover */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Estilo del texto */
+h1.texto1 {
+    color: gray; /* Color del texto */
+    font-size: 30px; /* Tamaño de la fuente */
+    text-align: center; /* Centrar texto */
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+}
+
+/* Efecto hover para la imagen */
+.brand-logo:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el ratón */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra al pasar el ratón */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .brand-logo {
+        width: 70%; /* Ancho de la imagen en pantallas más pequeñas */
+    }
+
+    h1.texto1 {
+        font-size: 24px; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .brand-logo {
+        width: 90%; /* Ancho de la imagen en pantallas muy pequeñas */
+    }
+
+    h1.texto1 {
+        font-size: 20px; /* Tamaño de fuente más pequeño en pantallas muy pequeñas */
+    }
+}

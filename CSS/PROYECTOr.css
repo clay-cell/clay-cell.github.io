@@ -1,0 +1,63 @@
+body {
+
+    background-color: #f4f4f4;
+    color: #333;
+    
+}
+
+.main {
+    flex: 1;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.h1 {
+    color: #19284C;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Galería de marcas */
+.brand-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center; /* Centra cada elemento horizontalmente */
+    align-items: center;    /* Centra verticalmente dentro del contenedor */
+    margin-top: 20px;
+    padding: 0 20px; /* Añade padding lateral para mejor presentación en pantallas pequeñas */
+}
+
+.brand-logo {
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Agrega el shadow predeterminado */
+}
+
+.brand-logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Mejora el shadow al hacer hover */
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    main h1 {
+        font-size: 2em;
+    }
+
+    .brand-logo {
+        width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    main h1 {
+        font-size: 1.8em;
+    }
+
+    .brand-logo {
+        width: 100px;
+    }
+}

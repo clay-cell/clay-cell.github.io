@@ -1,0 +1,47 @@
+/* Contenedor de la galería */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas si es necesario */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    margin-bottom: 50px; /* Espacio entre el contenido y el footer */
+}
+
+/* Estilo de las imágenes */
+.brand-logo {
+    width: 50%; /* Ancho de las imágenes */
+    margin: 10px; /* Margen para separar las imágenes */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones para hover */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Estilo de los textos */
+h1.texto1, h1.texto2 {
+    color: gray; /* Color del texto */
+    font-size: 30px; /* Tamaño de la fuente */
+    text-align: center; /* Centrar texto debajo de la imagen */
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+}
+
+/* Efecto hover para las imágenes */
+.brand-logo:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el ratón */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra al pasar el ratón */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .brand-logo {
+        width: 45%; /* Ancho de las imágenes en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .brand-logo {
+        width: 90%; /* Ancho de las imágenes en pantallas muy pequeñas */
+    }
+
+    h1.texto1, h1.texto2 {
+        font-size: 24px; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    }
+}

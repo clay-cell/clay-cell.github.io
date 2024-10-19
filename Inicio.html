@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mar-Liz Autos S.R.L.</title>
+	<link rel="stylesheet" href="CSS/Proyecto.css">
+	<link rel="stylesheet" href="CSS/extras.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+	<header>
+		<div class="logo">
+			<a href="Mar-Liz Autos S.R.L..html">
+				<img src="imgs/logo.jpg" alt="Mar-Liz Autos Logo">
+			</a>
+		</div>
+		<nav>
+			<a href="" class="nav-link">
+				<i class="fas fa-home"></i> Inicio
+			</a>
+			<a href="views/Marcas.html" class="nav-link">
+				<i class="fas fa-car"></i> Vehículos
+			</a>
+			<a href="views/Repuestos.html" class="nav-link">
+				<i class="fas fa-tools"></i> Repuestos
+			</a>
+			<a href="views/SobreNosotros.html" class="nav-link">
+				<i class="fas fa-info-circle"></i> Sobre Nosotros
+			</a>
+		</nav>
+		<button class="toggle-nav" id="nav-toggle">
+			<i class="fas fa-bars"></i>
+		</button>
+	</header>
+
+	<main>
+		<h2>¡Bienvenidos a la página oficial de Mar-Liz Autos S.R.L.!</h2>
+		<p>Aquí encontrarás información sobre los nuevos vehículos del año.</p>
+		<div class="img-container">
+			<img src="imgs/WhatsApp Image 2024-09-30 at 16.33.49.jpeg" class="img-0" alt="Imagen de vehículos">
+		</div>
+	</main>
+
+	<footer>
+		<p>&copy; 2024 MAR-LIZ AUTOS S.R.L. Todos los derechos reservados.</p>
+		<div class="social-media">
+			<a href="#"><i class="fab fa-facebook"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+		</div>
+	</footer>
+
+	<script>
+		document.getElementById('nav-toggle').addEventListener('click', function () {
+			const nav = document.querySelector('nav');
+			nav.classList.toggle('nav-open');
+		});
+	</script>
+</body>
+
+</html>

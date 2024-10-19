@@ -1,0 +1,48 @@
+/* Contenedor principal */
+.brand-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 50px; /* Agrega un margen inferior para evitar que las etiquetas p queden ocultas detrás del footer */
+}
+
+/* Estilo general para las imágenes */
+.brand-container img {
+    width: 45%;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 8px;
+}
+
+/* Texto debajo de las imágenes */
+.brand-container p {
+    margin-top: 10px;
+    color: gray;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Efecto hover para las imágenes */
+.brand-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajustes para dispositivos más pequeños */
+@media (max-width: 768px) {
+    .brand-container img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    .brand-container img {
+        width: 80%;
+    }
+
+    .brand-container p {
+        font-size: 24px;
+    }
+}

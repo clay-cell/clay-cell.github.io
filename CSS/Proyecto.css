@@ -1,0 +1,152 @@
+:root {
+    --main-bg-color: #3c3c3c;
+    --header-bg-color: #19284C;
+    --footer-bg-color: #333;
+    --link-color: ghostwhite;
+    --link-hover-color: rgb(228, 235, 135);
+    --text-color: white;
+    --btn-hover-bg-color: #475569;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    padding-top: 70px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--header-bg-color);
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--link-color);
+    margin-right: 50px;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+nav a i {
+    margin-right: 8px;
+}
+
+nav a:hover {
+    color: var(--link-hover-color);
+}
+
+.toggle-nav {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--link-color);
+    font-size: 2rem;
+    margin-right: 50px;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.img-container {
+    margin: 20px auto;
+    width: 90%;
+}
+
+.img-0 {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: var(--footer-bg-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    color: var(--link-color);
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: var(--link-hover-color);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .toggle-nav {
+        display: block;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    .nav-open {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--header-bg-color);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+}
